@@ -1,0 +1,119 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.black-ops-one {
+  font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+.header {
+  height: 70px;
+  padding: 0 30px;
+  background-color: #000;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 3em;
+}
+
+.nav-container {
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-item a {
+  display: flex;
+  flex-direction: row;
+  color:white;
+}
+
+/* BODY */
+.banner {
+  height: 500px;
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.banner-title {
+  font-size: 3em;
+  padding-top: 30px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:50px;
+}
+
+.banner-button {
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  width: 150px;
+  height: 40px;
+  border-style: none;
+  border-radius: 15px;
+}
+
+/* CONTAINER */ 
+
+.numbers {
+  background-color: #006970;
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+.numero {
+  font-weight: bolder;
+}
+
+/* FOOTER */ 
+
+.footer {
+  height: 100px;
+  background-color: #03494e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
