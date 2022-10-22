@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter Light BETA"), local("Inter-Light-BETA"), url("../fonts/Inter-LightBETA.woff2") format("woff2"), url("../fonts/Inter-LightBETA.woff") format("woff"), url("../fonts/Inter-LightBETA.ttf") format("truetype"), url("../fonts/Inter-LightBETA.eot");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype"), url("../fonts/Inter-Regular.eot");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype"), url("../fonts/Inter-Meduim.ttf");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: local("Inter Semi Bold"), local("Inter-Semi-Bold"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.ttf") format("truetype"), url("../fonts/Inter-Semibold.eot");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: local("Inter Bold"), local("Inter-Bold"), url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.ttf") format("truetype"), url("../fonts/Inter-Bols.eot");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Playfair Display";
+    src: local("Playfair Display Black"), local("Playfair-Display-Black"), url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff"), url("../fonts/PlayfairDisplay-Black.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Black.eot");
+    font-weight: 900;
+    font-style: normal;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus, :active {
+    outline: none;
+  }
+  
+  a:focus, a:active {
+    outline: none;
+  }
+  
+  nav, footer, header, aside {
+    display: block;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input, button, textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  .active-link, .header-menu-item:first-child a {
+    color: #D36060;
+    border-bottom: 2px solid #D36060;
+  }
+  
+  body {
+    background-color: #EFF1ED;
+  }
+  
+  .container {
+    width: 1150px;
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+  }
+  
+  .link-button {
+    padding: 16px 32px 16px 32px;
+    background-color: #505A5B;
+    font-family: "inter";
+    font-weight: 500;
+    border-radius: 10px;
+  }
+  
+  .header {
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 0 16px 0;
+    margin: 0 0 85px 0;
+    background-color: #EFF1ED;
+    -webkit-box-shadow: 0 3px 5px #e5e5e5;
+            box-shadow: 0 3px 5px #e5e5e5;
+  }
+  
+  .header-menu {
+    padding: 0;
+  }
+  
+  .header-menu-item {
+    display: inline-block;
+    padding: 16px 0 16px 0;
+    margin: 0 62px 0 0;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    vertical-align: top;
+  }
+  .header-menu-item:last-child {
+    margin: 0;
+  }
+  .header-menu-item a {
+    color: #505A5B;
+  }
+  .header-menu-item:last-child a {
+    color: #E8EBE4;
+  }
+  
+  .ottica .container {
+    position: relative;
+    padding: 253px 10px 320px 684px;
+  }
+  .ottica .container::after {
+    content: "";
+    width: 1440px;
+    height: 1024px;
+    position: absolute;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fgirl_model_with_sunglasses_is_wearing_jeans_shirt_in_white_background_4k_5k_hd_model-1600x900.jpg&f=1&nofb=1&ipt=087496ede45ca68721a6d8327c045845307ca4ddb7a5c9cfce28175e369d666c&ipo=images);
+    background-repeat: no-repeat;
+    left: -145px;
+    top: 0;
+    z-index: -1;
+  }
+  .ottica h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 156px;
+    letter-spacing: 0.02em;
+    color: #EFF1ED;
+    margin: 0 0 32px 0;
+    width: 507px;
+  }
+  .ottica p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #EFF1ED;
+    width: 496px;
+  }
+  
+  .text-preview {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #505A5B;
+    margin: 0 0 16px 0;
+  }
+  
+  .text-h2 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 73px;
+    color: #505A5B;
+    margin: 0 0 32px 0;
+  }
+  
+  .text-story {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #333333;
+  }
+  
+  .storia {
+    padding: 149px 0 70px 0;
+  }
+  .storia .container {
+    position: relative;
+    padding: 0 0 0 654px;
+  }
+  .storia .container::after {
+    content: "";
+    width: 476px;
+    height: 739px;
+    position: absolute;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.EQy12TX1_HJfq1STIoME4gHaE9%26pid%3DApi&f=1&ipt=285cb9942b4df2522070753263479a7342e66c7b6739f7d3e1b63495ccd17e12&ipo=images);
+    background-repeat: no-repeat;
+    left: 0;
+    top: -70px;
+  }
+  .storia .text-story {
+    width: 476px;
+  }
+  
+  .merce {
+    padding: 144px 0 80px 0;
+    background-color: #505A5B;
+  }
+  .merce .container {
+    position: relative;
+  }
+  .merce .container::after {
+    content: "";
+    position: absolute;
+    left: 575px;
+    top: -64px;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.DEH6ezu4_XL3YfiDlDlKbQHaE7%26pid%3DApi&f=1&ipt=2e73e19515e680b70d858cde76994e489b4df22ac0aa90a93d7b284801ce978b&ipo=images);
+    background-repeat: no-repeat;
+    width: 575px;
+    height: 553px;
+  }
+  .merce .merce-text {
+    width: 476px;
+    margin: 0 0 184px 0;
+  }
+  .merce .merce-text .text-h2 {
+    color: #EFF1ED;
+  }
+  .merce .merce-text .text-preview,
+  .merce .merce-text .text-story {
+    color: #E8EBE4;
+  }
+  
+  .relazioni {
+    width: 838px;
+    margin: 0 auto;
+  }
+  .relazioni .relazioni-text {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #EFF1ED;
+    margin: 0 0 40px 0;
+  }
+  .relazioni .marchi-item {
+    display: inline-block;
+    margin: 0 80px 0 0;
+    width: 178px;
+    height: 64px;
+    background-image: url(http://mybestcontacts.com/wp-content/uploads/2015/09/shutterstock_192451649.jpg);
+    background-repeat: no-repeat;
+  }
+  .relazioni .marchi-item.marchi-rayban {
+    background-position: 0 0;
+    margin: 0 20px 0 0;
+  }
+  .relazioni .marchi-item.marchi-moscot {
+    background-position: -200px 0;
+    margin: 0 40px 0 0;
+  }
+  .relazioni .marchi-item.marchi-tomford {
+    background-position: -420px 0;
+    margin: 0 55px 0 0;
+  }
+  .relazioni .marchi-item.marchi-oliver {
+    background-position: -660px 0;
+    margin: 0;
+  }
+  
+  .vista {
+    padding: 509px 0 129px 0;
+  }
+  .vista .container {
+    position: relative;
+  }
+  .vista .container::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -389px;
+    background-image: url(https://www.figma.com/community/file/1079464538758466856);
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 320px;
+  }
+  .vista .vista-text {
+    width: 575px;
+    margin: 0 auto;
+  }
+  .vista .vista-text .text-story {
+    margin: 0 0 40px 0;
+  }
+  .vista .vista-text a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #E8EBE4;
+  }
+  .vista .vista-text .link-button {
+    display: inline-block;
+    color: #E8EBE4;
+  }
+  
+  .footer {
+    padding: 80px 0 32px 0;
+    background-color: #505A5B;
+  }
+  .footer .container {
+    padding: 0 0 0 100px;
+  }
+  .footer nav,
+  .footer .orari-data,
+  .footer .Indicazioni-data,
+  .footer .rights {
+    display: block;
+  }
+  .footer nav {
+    width: 278px;
+    float: left;
+    margin: 0 119px 0 0;
+  }
+  .footer .orari-data,
+  .footer .Indicazioni-data {
+    float: left;
+    margin: 16px 0 0 0;
+    width: 277px;
+  }
+  .footer .orari-data p,
+  .footer .Indicazioni-data p {
+    margin: 0 0 16px 0;
+  }
+  .footer .orari-data p:last-child,
+  .footer .Indicazioni-data p:last-child {
+    margin: 0;
+  }
+  .footer .orari-data {
+    margin: 16px 21px 0 0;
+  }
+  .footer .Indicazioni-data {
+    margin: 16px 0 117px 0;
+  }
+  .footer .footer-link {
+    border-bottom: 1.5px solid #E8EBE4;
+  }
+  
+  .footer-menu-item {
+    width: 278px;
+    margin: 0 119px 16px 0;
+  }
+  .footer-menu-item a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #E8EBE4;
+  }
+  .footer-menu-item:first-child a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #E8EBE4;
+  }
+  .footer-menu-item:last-child {
+    margin: 0;
+  }
+  
+  .data-promo {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #E8EBE4;
+  }
+  
+  .data-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #E8EBE4;
+  }
+  .data-text a {
+    color: #E8EBE4;
+  }
+  
+  .rights {
+    margin: 0 0 0 -100px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #E8EBE4;
+    clear: both;
+  }
+  .rights a {
+    color: #E8EBE4;
+  }

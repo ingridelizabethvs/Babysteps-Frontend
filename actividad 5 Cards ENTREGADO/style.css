@@ -1,0 +1,69 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-container {
+    padding: 50px 50px 0 0;
+    width: 1300px;
+    height: 600px;
+    color:midnightblue;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 300px;
+    height: 430px;
+    text-align:center;
+    text-align: left;
+}
+
+article {
+    padding: 15px;
+    margin: 10px;
+}
+
+p {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:rgb(36, 36, 63);
+    color: white;
+    border:none;
+}
+
+button a {
+    color:white;
+}
+
+header {
+    background-color: lightgrey;
+    color: rgb(36, 36, 63);
+    padding-top:  70px;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 30px;
+    width:100%;
+    text-align:center;
+
+}
+
+/* HEADINGS | TITULOS */
+h1 { font-size: 30px;}
+h2 { font-size: 25px; }
+h3 { font-size: 25px; }
+h4 { font-size: 25px; }
+
+/* Add shadows to create the "card" effect | Añado sombra para recrear efecto */
+.flex-item {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
