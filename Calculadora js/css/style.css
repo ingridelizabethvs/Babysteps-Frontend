@@ -1,0 +1,113 @@
+/* BODY */
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-image: url(syn2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    opacity: 95%;
+    z-index:0;
+}
+
+.calculadora {
+    display: grid;
+    flex-direction: wrap;
+    height: 55vh;
+    color: white;
+    grid-template-columns: repeat(4, 65px);
+    grid-template-rows: 120px repeat(6, 50px);
+    background-color: #1d0a2b;
+    opacity: 75%;
+    padding: 10px 10px;
+    border-radius: 25px;
+    box-shadow: 15px 10px 0px 5px #873c6b;
+    position: relative;
+}
+
+.display {
+    grid-column: 1 / -1;
+    padding: 10px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url(holo.jpg);
+    background-size: cover;
+    border-radius: 32px;
+    border-width: 3px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+
+button {
+    color: #6b0080;
+    cursor: pointer;
+    margin: 1px;
+    padding: 0;
+    border-radius: 29px;
+    font-size: 0.9em;
+    border-style:double;
+    border-width: 2px;
+    border-color: #44c3cb;
+    background-color: transparent;
+    box-shadow: 5px 5px 10px 5px #28888bc0;
+    background: #c5b1fd;
+    box-shadow: 0 0 50px #a914ff;
+}
+
+button:hover {
+    color: white;
+    font-weight: bolder;
+    background-image: url(holo.jpg);
+    opacity: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+
+
+#valor-actual {
+    font-size: 2em;
+}
+
+#valor-anterior {
+    font-size: 2.2em;
+}
+
+
+/* PARTICLES */
+#particles-js {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* MP3 */
